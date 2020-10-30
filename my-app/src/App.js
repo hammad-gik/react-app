@@ -10,6 +10,7 @@ function App() {
         <p>
           Hello world
           This is devops
+          Enjoy.
 
           Edit <code>src/App.js</code> and save to reload your web app.
         </p>
