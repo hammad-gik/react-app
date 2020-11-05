@@ -30,8 +30,16 @@ jobs:
       working-directory: my-app
     - run: npm test
       working-directory: my-app
-    - name: Login to Heroku Container registry
+    - name: heroku - Login to Container registry
       env: 
         HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
       run: heroku container:login 
       working-directory: my-app
+    - name: heroku - Build and push
+      env:
+        HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+      run: heroku container:push -a MyApp web 
+    - name: heroku - Release
+      env:
+        HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+      run: heroku container:release -a MyApp web 
