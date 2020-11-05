@@ -36,3 +36,4 @@ jobs:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "hammad-gik"
           heroku_email: "hammad.mehmood@giki.edu.pk"
+          buildpack: "https://github.com/heroku/heroku-buildpack-nodejs#v170"
