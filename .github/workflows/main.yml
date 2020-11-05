@@ -37,4 +37,4 @@ jobs:
           heroku_app_name: "hammad-gik"
           heroku_email: "hammad.mehmood@giki.edu.pk"
           appdir: "my-app"
-          buildpack: "https://github.com/mars/create-react-app-buildpack"
+          buildpack: "https://github.com/heroku/heroku-buildpack-nodejs#v170"
