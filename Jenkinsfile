@@ -9,10 +9,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        dir(path: 'my-app') {
-          sh 'npm install'
-        }
-
+        echo 'Hello'
       }
     }
 
